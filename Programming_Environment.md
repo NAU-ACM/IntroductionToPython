@@ -10,7 +10,7 @@
 
 
 ### Overview
-Selecting a Python environment is really hard because there are a lot of options to choose from. For beginners, other courses most of the time, use the Python IDLE which is the basic command line type of tool for Windows. However for this course I would like to introduce you to IPython/Jupyter early, because these interactive environments will give you great flexibility in terms of instant execution of separate lines, and ability to experiment with notebook style.
+Selecting a Python environment is really hard because there are a lot of options to choose from. For beginners, other courses most of the time, use the Python IDLE which is the basic command line type of tool for Windows. However for this course I would like to introduce you to IPython/Jupyter earlier, because these interactive environments will give you great flexibility in terms of instant execution of separate lines, and ability to experiment with notebook style.
 
 ### Setting Up Python Environment
 Faster and less error prone approach to install IPython and Jupyter notebook is to install and setup [Anaconda Python Distribution](https://www.continuum.io/downloads), it comes with 100 popular python packages pre-installed. Additionally, you'll have access to over 720 packages that can easily be installed with ```conda``` command, Anaconda's renowned package, dependency and environment manager._[1]_
