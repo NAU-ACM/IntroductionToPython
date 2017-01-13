@@ -95,7 +95,7 @@ def startHorses(horses, banners, finish_line, forward_incr):
     midrace_leading_horse_displayed = False
 
     # display "there're off" banner
-    displayBanner(banner_images[0][0], (70, -300))
+    displayBanner(banners[0][0], (70, -300))
 
     k = 0
     while not have_winner:
@@ -150,7 +150,7 @@ def main():
     num_horses = 10
 
     # set window size
-    turtle.setup(750,800)
+    turtle.setup(900,800)
 
     # get turtle window
     window = turtle.Screen()
@@ -163,7 +163,7 @@ def main():
     turtle.penup()
 
     # init screen layout parameters
-    start_loc = (240, -200)
+    start_loc = (180, -200)
     finish_line = -240
     track_separation = 60
     forward_incr = 6
