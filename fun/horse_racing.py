@@ -163,8 +163,8 @@ def main():
     turtle.penup()
 
     # init screen layout parameters
-    start_loc = (180, -200)
-    finish_line = -240
+    start_loc = (350, -220)
+    finish_line = -300
     track_separation = 60
     forward_incr = 6
 
