@@ -1,0 +1,157 @@
+\documentclass[11pt, a4paper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Modeling \&  Evaluation} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{September 26, 2014} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                          % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+{\Large \textsc{Introduction to Python Programming}}
+\end{center}
+\begin{center}
+Spring 2017
+\end{center}
+%\date{January 19, 2017}
+
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Instructor:} & Enes Kemal Ergin & & &  & \textbf{Time:} & T-T 14:30 -- 16:00 \\
+\textbf{Email:} &  \href{mailto:eergin@na.edu}{eergin@na.edu} & & & & \textbf{Place:} & 8th Floor Research Room
+\end{tabular}
+\end{minipage}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Course Page:} \begin{enumerate}
+\item \url{https://github.com/NAU-ACM/IntroductionToPython}
+\end{enumerate}
+
+\vskip.15in
+\noindent\textbf{Office Hours:} Every day, 16:00 - 17:30 at Tutoring Center
+
+
+\vskip.15in
+\noindent\textbf{Objectives:}  The purpose of this course is showing how to program using Python Language. Throughout this 8-week course we will learn version control system's logic, how to use Git and GitHub to learn how to be efficient developer, Python's built-in data types, Python's syntax, control structures, functions, modules, and classes. During the course period we will complete so many hands-on exercises together and weekly challenges. After completing this introductory Python course, you will be ready to go to next step to learn deeper concepts in Python Programming and it's packages, such as; Django or Flask for web development, pandas for Data science, Matplotlib for plotting, pygame for game development, scipy for scientific applications, numpy for huge numerical applications, and more.
+
+
+At the end of the course, a successful student should be able to:
+\begin{itemize}
+\item understand the syntax and written Python code,
+\item comprehend and implement the most fundamental algorithms with Python,
+\item develop programs from basic to complex,
+\end{itemize}
+
+
+\vskip.15in
+\noindent\textbf{Prerequisites:}
+\begin{itemize}
+\item Computer with Anaconda Python Distribution installed 
+\item GitHub Account
+\item Internet Connection
+\item Enthusiasm
+\end{itemize}
+
+
+\vspace*{.15in}
+
+\noindent \textbf{Tentative Course Outline:}
+\begin{center} 
+\begin{minipage}{5in}
+\begin{flushleft}
+%Chapter 1 \dotfill ~$\approx$ 3 days \\
+{\color{darkgreen}{\Rectangle}} ~About Python and Setting Up the Environment		\\
+{\color{darkgreen}{\Rectangle}} ~Data and Expressions	\\
+{\color{darkgreen}{\Rectangle}} ~Control Structures \\
+{\color{darkgreen}{\Rectangle}} ~Sequences		\\
+{\color{darkgreen}{\Rectangle}} ~Functions		\\
+{\color{darkgreen}{\Rectangle}} ~Modular Design \\
+{\color{darkgreen}{\Rectangle}} ~Writing and Reading Files	\\
+{\color{darkgreen}{\Rectangle}} ~Dictionaries and Sets		
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+%\vspace*{.15in}
+%\noindent\textbf{Grading Policy:} Homework and quizzes (20\%),  Midterm 1 (25\%), Midterm 2 (25\%), Final (30\%). %Four Projects (40\% = 4 * 10\%)
+
+%\vskip.15in
+%\noindent\textbf{Important Dates:}
+%\begin{center} \begin{minipage}{3.8in}
+%\begin{flushleft}
+%Midterm \#1      \dotfill ~\={A}b\={a}n 16, 1393 $\equiv$ November 7, 2014 \\
+%Midterm \#2      \dotfill ~\={A}zar 21, 1393 $\equiv$ December 12, 2014 \\
+%Project Deadline \dotfill ~Month Day \\
+%Final Exam       \dotfill ~Dey 18, 1393 $\equiv$ January 8, 2015 \\
+%\end{flushleft}
+%\end{minipage}
+%\end{center}
+
+
+
+
+%%%%%% END 
+\end{document} 
