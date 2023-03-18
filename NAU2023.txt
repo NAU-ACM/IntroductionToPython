@@ -1,0 +1,3 @@
+Hello, My name is Azamat
+I study at NAU, I am freshman.
+I would like to make a pull request on this progect.
